@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+    
+    
+    
+    <RelativeLayout
+        
+          android:id="@+id/rlayout_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+      
+    
+    <RelativeLayout
+        android:id="@+id/rlayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+          android:paddingTop="@dimen/default_padding_top"
+         android:paddingBottom="@dimen/default_padding_top"
+         android:paddingLeft="@dimen/register_privacy_text"
+         android:paddingRight="@dimen/registration_radiobutton_padding_left"
+     
+        
+        >
+        
+        <TextView
+            
+            android:id="@+id/textview_contactdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/register_dialog_securityquestion_padding"
+            android:paddingBottom="@dimen/register_dialog_securityquestion_padding"
+            android:paddingRight="@dimen/register_dialog_securityquestion_padding"
+            
+           
+            android:text="@string/cenhealth_loyality_title"
+            android:textColor="@color/registration_registerform_text_color"
+            android:textSize="@dimen/default_titile_text_size"
+            android:typeface="sans"
+            android:ems="@integer/header_text_ems"
+           
+            
+            />
+        
+         <ImageButton
+            android:id="@+id/imagebutton_edit"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit"
+           android:layout_toRightOf="@+id/textview_title"
+           android:layout_marginLeft="@dimen/default_header_margine_right"
+            android:layout_centerVertical="true" 
+          android:visibility="gone"
+          
+            />
+        </RelativeLayout>
+        
+      
+    
+    <RelativeLayout
+             android:id="@+id/rlayout_personalinfo"
+             android:layout_width="wrap_content"
+            android:padding="@dimen/edit_contactdetails_layout_padding"
+             android:layout_height="wrap_content"
+               
+             android:layout_below="@+id/rlayout_header"
+          
+            >
+          
+     
+             
+             <RelativeLayout
+                 android:id="@+id/rlayout_personalinfoinner"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                   android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/login_icon_margintop"
+                
+                 >
+                 
+               
+          
+             <RelativeLayout
+                 android:id="@+id/rlayout_barcode"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 >
+                 
+                 <ImageView
+                     android:id="@+id/imageview_barcode"
+                     android:layout_width="@dimen/cenhealth_loyality_default_image_width"
+                     android:layout_height="@dimen/slide_menu_image_width"
+                  android:scaleType="fitXY"
+                     
+                     
+                     
+                     />
+                 
+                 <TextView
+                     android:id="@+id/textview_barcode"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/default_running_text_color"
+                     android:textSize="@dimen/default_running_text_size"
+                     android:layout_below="@+id/imageview_barcode"
+                     android:layout_centerHorizontal="true"
+                    
+                     />
+                
+                 </RelativeLayout>
+                 
+              <RelativeLayout
+                 android:id="@+id/rlayout_qrcode"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/rlayout_barcode"
+                 android:layout_marginTop="@dimen/login_forgotpassword_right_padding"
+                 >
+                   
+                     <ImageView
+                     android:id="@+id/imageview_qrcode"
+                     android:layout_width="@dimen/cenhealth_loyality_default_image_width"
+                     android:layout_height="@dimen/right_eye_width"
+                     android:scaleType="fitXY"
+                     
+                     />
+                     
+                        <TextView
+                     android:id="@+id/textview_qrcode"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:textColor="@color/default_running_text_color"
+                     android:textSize="@dimen/default_running_text_size"
+                     android:layout_below="@+id/imageview_qrcode"
+                     android:layout_centerHorizontal="true"
+                    
+                     />
+                  
+                 </RelativeLayout>
+          
+                 
+                 </RelativeLayout>
+                 
+               
+             
+        
+        </RelativeLayout>
+    
+        </RelativeLayout>
+    
+    
+
+</RelativeLayout>
